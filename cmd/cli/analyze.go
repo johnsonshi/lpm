@@ -83,7 +83,7 @@ func newAnalyzeCmd(stdin io.Reader, stdout io.Writer, stderr io.Writer, args []s
 	cobraCmd.MarkFlagRequired(subjectImageManifestFileLongFlag)
 
 	var lpmManifestArtifactRefLongFlag = "lpm-manifest-artifact-ref"
-	f.StringVarP(&analyzeCmd.lpmManifestArtifactRef, lpmManifestArtifactRefLongFlag, "t", "", "(optional) target artifact ref in which the lpm manifest file will be pushed to")
+	f.StringVarP(&analyzeCmd.lpmManifestArtifactRef, lpmManifestArtifactRefLongFlag, "t", "", "(optional) target artifact ref in which the generated lpm manifest file will be pushed to as an ORAS referrer to the subject image")
 
 	f.StringVarP(&analyzeCmd.output, "output", "o", "", "(optional) output file to also write layer provenance metadata (default: stdout)")
 

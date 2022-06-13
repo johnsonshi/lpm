@@ -23,6 +23,7 @@ func newRootCmd(stdin io.Reader, stdout io.Writer, stderr io.Writer, args []stri
 
 	cobraCmd.AddCommand(
 		newAnalyzeCmd(stdin, stdout, stderr, args),
+		newConfigAnnotateCmd(stdin, stdout, stderr, args),
 	)
 
 	_ = flags.Parse(args)

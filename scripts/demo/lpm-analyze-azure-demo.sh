@@ -11,6 +11,8 @@ ACR_LOGIN_SERVER=$(echo "$ACR_ACCESS_TOKEN_OUTPUT" | jq --raw-output ".loginServ
 
 make build-cli
 
+mkdir -p ./examples/manifests/lpm-manifests/
+
 ./bin/lpm analyze \
     --username 						"${ACR_ACCESS_TOKEN_USERNAME}" \
     --password 						"${ACR_ACCESS_TOKEN}" \

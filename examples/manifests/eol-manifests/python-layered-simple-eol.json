@@ -1,0 +1,16 @@
+{
+	"schemaVersion": 2,
+	"mediaType": "application/io.azurecr.distribution.manifest.v2.eol.v1+json",
+	"config": {
+		"mediaType": "application/io.azurecr.container.image.v1.eol.v1+json",
+		"digest": "sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+		"size": 2,
+		"annotations": {
+			"io.azurecr.eol.v1.subject.eol.date": "2025-01-01",
+			"io.azurecr.eol.v1.subject.eol.description": "This image will no longer be maintained by the maintainer.",
+			"io.azurecr.eol.v1.subject.eol.reason": "end-of-maintenance",
+			"io.azurecr.eol.v1.subject.eol.support.url": "https://docs.microsoft.com/en-us/azure/container-registry/container-registry-eol"
+		}
+	},
+	"layers": []
+}
